@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>cookie store</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- cookie-store -->
+    <main class="cookie-store">
+      <!-- cookie-slider -->
+      <div id="cookieSlider" class="cookie-slider">
+        <div id="leftArrow" class="arrow">
+          <a href="#"><img src="https://cdn.glitch.com/a937f878-fbbb-4839-aa08-d25fd3a98c5f%2Fleft-arrow.svg?1516244153715" alt="left arrow icon"></a>
+        </div>
+        <div class="cookie-slot">
+          <img class="cookie-slot-image" src="#" alt="">
+          <div class="ta-center cookie-name"></div>
+          <div class="ta-center learn-more tooltip">
+            - LEARN MORE -
+            <span class="tooltip-text"></span>
+          </div>
+        </div>
+        <div class="cookie-slot">
+          <img class="cookie-slot-image" src="#" alt="">
+          <div class="ta-center cookie-name"></div>
+          <div class="ta-center learn-more tooltip">
+            - LEARN MORE -
+            <span class="tooltip-text"></span>
+          </div>
+        </div>
+        <div class="cookie-slot">
+          <img class="cookie-slot-image" src="#" alt="">
+          <div class="ta-center cookie-name"></div>
+          <div class="ta-center learn-more tooltip">
+            - LEARN MORE -
+            <span class="tooltip-text"></span>
+          </div>
+        </div>
+        <div id="rightArrow" class="arrow">
+          <a href="#"><img src="https://cdn.glitch.com/a937f878-fbbb-4839-aa08-d25fd3a98c5f%2Fright-arrow.svg?1516244158852" alt="left arrow icon"></a>
+        </div>
+      </div><!-- end .cookie-slider -->
+      
+      
+      
+      <!-- product-select -->
+      <div class="product-select">
+        <hr>
+        <div class="margin-auto ta-center bold font-size-14 display-block store-header selection">- MAKE YOUR SELECTION -</div>
+        
+        <!-- product-options -->
+        <div class="product-options">
+          <!-- dozen -->
+          <div class="product">
+            <!-- image + description (if there's a description) -->
+            <div class="product-image">
+              <img src="https://cdn.glitch.com/a937f878-fbbb-4839-aa08-d25fd3a98c5f%2Fassorted-cookies-pick3_1024x1024.jpg?1516327244430" alt="cookies">
+            </div>
+            <div class="ta-center">
+              <p>
+                1 DOZEN ASSORTED COOKIES
+              </p>
+            </div>
+            <div class="ta-center">
+              <p class="bold">
+                $22.00
+              </p>
+            </div>
+            <div class="ta-center">
+              <button class="choose-flavors">CHOOSE FLAVORS <span>&rsaquo;</span></button>
+            </div>
+          </div>
+
+          <!-- half-dozen -->
+          <div class="product">
+            <!-- image + description -->
+            <div class="product-image">
+              <img src="https://cdn.glitch.com/a937f878-fbbb-4839-aa08-d25fd3a98c5f%2Fcoconut-joy-cookie-pick4_1024x1024.jpg?1516327244471" alt="cookies">
+            </div>
+            <div class="ta-center">
+              <p>
+                &frac12; DOZEN COOKIES
+              </p>
+            </div>
+            <div class="ta-center">
+              <p class="bold">
+                $12.00
+              </p>
+            </div>
+            <div class="ta-center">
+              <button class="choose-flavors">CHOOSE FLAVORS <span>&rsaquo;</span></button>
+            </div>
+          </div>
+
+          <!-- suss cookie club dozen -->
+          <div class="product">
+            <!-- image + description -->
+            <div class="product-image">
+              <img src="https://cdn.glitch.com/a937f878-fbbb-4839-aa08-d25fd3a98c5f%2Fassorted-cookies-pick4_1024x1024.jpg?1516327244388" alt="cookies">
+            </div>
+            <div class="ta-center">
+              <p>
+                SUSS COOKIE CLUB-1DOZ SAVE 20%!
+              </p>
+            </div>
+            <div class="ta-center">
+              <p class="bold">
+                $17.60
+              </p>
+            </div>
+            <div class="ta-center">
+              <button class="choose-flavors">CHOOSE FLAVORS <span>&rsaquo;</span></button>
+            </div>
+          </div>
+        </div><!-- end product-option -->
+      </div><!-- end product-select -->
+
+      
+      
+      <!-- cookie-select section -->
+      <section class="cookie-select-section">
+        <hr>
+        <div class="margin-auto ta-center bold font-size-14 display-block store-header flavors">- SELECT YOUR COOKIE FLAVORS -</div>
+        
+        <div class="cookie-select">
+          <!-- cookie box -->
+          <div class="cookie-box">
+            <!-- cookie-box-amount -->
+            <!-- add the "dozen" class on this parent if user clicks a dozen -->
+            <!-- otherwise default amount is half-dozen and no extra class used -->
+            <div class="cookie-box-amount">
+              <!-- one of these for a half-dozen -->
+              <div class="half-dozen">
+                <div class="cookie">
+                  <svg width="50px" height="162px" viewbox="0 0 50 162">
+                    <path class="cookie-outline" fill="#000000" fill-rule="nonzero" d="M25,3 C12.8497355,3 3,12.8497355 3,25 L3,137 C3,149.150264 12.8497355,159 25,159 C37.1502645,159 47,149.150264 47,137 L47,25 C47,12.8497355 37.1502645,3 25,3 Z M25,0 C38.8071187,0 50,11.1928813 50,25 L50,137 C50,150.807119 38.8071187,162 25,162 C11.1928813,162 0,150.807119 0,137 L0,25 C0,11.1928813 11.1928813,0 25,0 Z"></path>
+                    <path class="cookie-check hidden" fill="#CAE7DF" d="M25,7 C34.9411255,7 43,15.0588745 43,25 L43,138 C43,147.941125 34.9411255,156 25,156 C15.0588745,156 7,147.941125 7,138 L7,25 C7,15.0588745 15.0588745,7 25,7 Z M37.3361643,72.4504347 C36.5756461,71.6493817 35.3097425,71.6165218 34.5086896,72.37704 L21.6482912,84.586679 L15.2173857,78.3758192 C14.4228623,77.608482 13.1567242,77.6305207 12.3893869,78.425044 C11.6220497,79.2195674 11.6440884,80.4857056 12.4386118,81.2530428 L21.6246233,90.1247373 L37.2627697,75.2779094 C38.0638226,74.5173912 38.0966825,73.2514876 37.3361643,72.4504347 Z"></path>
+                  </svg>
+                </div>
+                <div class="cookie">
+                  <svg width="50px" height="162px" viewbox="0 0 50 162">
+                    <path class="cookie-outline" fill="#000000" fill-rule="nonzero" d="M25,3 C12.8497355,3 3,12.8497355 3,25 L3,137 C3,149.150264 12.8497355,159 25,159 C37.1502645,159 47,149.150264 47,137 L47,25 C47,12.8497355 37.1502645,3 25,3 Z M25,0 C38.8071187,0 50,11.1928813 50,25 L50,137 C50,150.807119 38.8071187,162 25,162 C11.1928813,162 0,150.807119 0,137 L0,25 C0,11.1928813 11.1928813,0 25,0 Z"></path>
+                    <path class="cookie-check hidden" fill="#CAE7DF" d="M25,7 C34.9411255,7 43,15.0588745 43,25 L43,138 C43,147.941125 34.9411255,156 25,156 C15.0588745,156 7,147.941125 7,138 L7,25 C7,15.0588745 15.0588745,7 25,7 Z M37.3361643,72.4504347 C36.5756461,71.6493817 35.3097425,71.6165218 34.5086896,72.37704 L21.6482912,84.586679 L15.2173857,78.3758192 C14.4228623,77.608482 13.1567242,77.6305207 12.3893869,78.425044 C11.6220497,79.2195674 11.6440884,80.4857056 12.4386118,81.2530428 L21.6246233,90.1247373 L37.2627697,75.2779094 C38.0638226,74.5173912 38.0966825,73.2514876 37.3361643,72.4504347 Z"></path>
+                  </svg>
+                </div>
+                <div class="cookie">
+                  <svg width="50px" height="162px" viewbox="0 0 50 162">
+                    <path class="cookie-outline" fill="#000000" fill-rule="nonzero" d="M25,3 C12.8497355,3 3,12.8497355 3,25 L3,137 C3,149.150264 12.8497355,159 25,159 C37.1502645,159 47,149.150264 47,137 L47,25 C47,12.8497355 37.1502645,3 25,3 Z M25,0 C38.8071187,0 50,11.1928813 50,25 L50,137 C50,150.807119 38.8071187,162 25,162 C11.1928813,162 0,150.807119 0,137 L0,25 C0,11.1928813 11.1928813,0 25,0 Z"></path>
+                    <path class="cookie-check hidden" fill="#CAE7DF" d="M25,7 C34.9411255,7 43,15.0588745 43,25 L43,138 C43,147.941125 34.9411255,156 25,156 C15.0588745,156 7,147.941125 7,138 L7,25 C7,15.0588745 15.0588745,7 25,7 Z M37.3361643,72.4504347 C36.5756461,71.6493817 35.3097425,71.6165218 34.5086896,72.37704 L21.6482912,84.586679 L15.2173857,78.3758192 C14.4228623,77.608482 13.1567242,77.6305207 12.3893869,78.425044 C11.6220497,79.2195674 11.6440884,80.4857056 12.4386118,81.2530428 L21.6246233,90.1247373 L37.2627697,75.2779094 C38.0638226,74.5173912 38.0966825,73.2514876 37.3361643,72.4504347 Z"></path>
+                  </svg>
+                </div>
+                <div class="cookie">
+                  <svg width="50px" height="162px" viewbox="0 0 50 162">
+                    <path class="cookie-outline" fill="#000000" fill-rule="nonzero" d="M25,3 C12.8497355,3 3,12.8497355 3,25 L3,137 C3,149.150264 12.8497355,159 25,159 C37.1502645,159 47,149.150264 47,137 L47,25 C47,12.8497355 37.1502645,3 25,3 Z M25,0 C38.8071187,0 50,11.1928813 50,25 L50,137 C50,150.807119 38.8071187,162 25,162 C11.1928813,162 0,150.807119 0,137 L0,25 C0,11.1928813 11.1928813,0 25,0 Z"></path>
+                    <path class="cookie-check hidden" fill="#CAE7DF" d="M25,7 C34.9411255,7 43,15.0588745 43,25 L43,138 C43,147.941125 34.9411255,156 25,156 C15.0588745,156 7,147.941125 7,138 L7,25 C7,15.0588745 15.0588745,7 25,7 Z M37.3361643,72.4504347 C36.5756461,71.6493817 35.3097425,71.6165218 34.5086896,72.37704 L21.6482912,84.586679 L15.2173857,78.3758192 C14.4228623,77.608482 13.1567242,77.6305207 12.3893869,78.425044 C11.6220497,79.2195674 11.6440884,80.4857056 12.4386118,81.2530428 L21.6246233,90.1247373 L37.2627697,75.2779094 C38.0638226,74.5173912 38.0966825,73.2514876 37.3361643,72.4504347 Z"></path>
+                  </svg>
+                </div>
+                <div class="cookie">
+                  <svg width="50px" height="162px" viewbox="0 0 50 162">
+                    <path class="cookie-outline" fill="#000000" fill-rule="nonzero" d="M25,3 C12.8497355,3 3,12.8497355 3,25 L3,137 C3,149.150264 12.8497355,159 25,159 C37.1502645,159 47,149.150264 47,137 L47,25 C47,12.8497355 37.1502645,3 25,3 Z M25,0 C38.8071187,0 50,11.1928813 50,25 L50,137 C50,150.807119 38.8071187,162 25,162 C11.1928813,162 0,150.807119 0,137 L0,25 C0,11.1928813 11.1928813,0 25,0 Z"></path>
+                    <path class="cookie-check hidden" fill="#CAE7DF" d="M25,7 C34.9411255,7 43,15.0588745 43,25 L43,138 C43,147.941125 34.9411255,156 25,156 C15.0588745,156 7,147.941125 7,138 L7,25 C7,15.0588745 15.0588745,7 25,7 Z M37.3361643,72.4504347 C36.5756461,71.6493817 35.3097425,71.6165218 34.5086896,72.37704 L21.6482912,84.586679 L15.2173857,78.3758192 C14.4228623,77.608482 13.1567242,77.6305207 12.3893869,78.425044 C11.6220497,79.2195674 11.6440884,80.4857056 12.4386118,81.2530428 L21.6246233,90.1247373 L37.2627697,75.2779094 C38.0638226,74.5173912 38.0966825,73.2514876 37.3361643,72.4504347 Z"></path>
+                  </svg>
+                </div>
+                <div class="cookie">
+                  <svg width="50px" height="162px" viewbox="0 0 50 162">
+                    <path class="cookie-outline" fill="#000000" fill-rule="nonzero" d="M25,3 C12.8497355,3 3,12.8497355 3,25 L3,137 C3,149.150264 12.8497355,159 25,159 C37.1502645,159 47,149.150264 47,137 L47,25 C47,12.8497355 37.1502645,3 25,3 Z M25,0 C38.8071187,0 50,11.1928813 50,25 L50,137 C50,150.807119 38.8071187,162 25,162 C11.1928813,162 0,150.807119 0,137 L0,25 C0,11.1928813 11.1928813,0 25,0 Z"></path>
+                    <path class="cookie-check hidden" fill="#CAE7DF" d="M25,7 C34.9411255,7 43,15.0588745 43,25 L43,138 C43,147.941125 34.9411255,156 25,156 C15.0588745,156 7,147.941125 7,138 L7,25 C7,15.0588745 15.0588745,7 25,7 Z M37.3361643,72.4504347 C36.5756461,71.6493817 35.3097425,71.6165218 34.5086896,72.37704 L21.6482912,84.586679 L15.2173857,78.3758192 C14.4228623,77.608482 13.1567242,77.6305207 12.3893869,78.425044 C11.6220497,79.2195674 11.6440884,80.4857056 12.4386118,81.2530428 L21.6246233,90.1247373 L37.2627697,75.2779094 C38.0638226,74.5173912 38.0966825,73.2514876 37.3361643,72.4504347 Z"></path>
+                  </svg>
+                </div>
+              </div><!-- end .half-dozen -->
+              <!-- and two for a dozen -->
+              <!-- <div class="half-dozen second">
+                <div class="cookie">
+                  <svg width="50px" height="162px" viewbox="0 0 50 162">
+                    <path class="cookie-outline" fill="#000000" fill-rule="nonzero" d="M25,3 C12.8497355,3 3,12.8497355 3,25 L3,137 C3,149.150264 12.8497355,159 25,159 C37.1502645,159 47,149.150264 47,137 L47,25 C47,12.8497355 37.1502645,3 25,3 Z M25,0 C38.8071187,0 50,11.1928813 50,25 L50,137 C50,150.807119 38.8071187,162 25,162 C11.1928813,162 0,150.807119 0,137 L0,25 C0,11.1928813 11.1928813,0 25,0 Z"></path>
+                    <path class="cookie-check hidden" fill="#CAE7DF" d="M25,7 C34.9411255,7 43,15.0588745 43,25 L43,138 C43,147.941125 34.9411255,156 25,156 C15.0588745,156 7,147.941125 7,138 L7,25 C7,15.0588745 15.0588745,7 25,7 Z M37.3361643,72.4504347 C36.5756461,71.6493817 35.3097425,71.6165218 34.5086896,72.37704 L21.6482912,84.586679 L15.2173857,78.3758192 C14.4228623,77.608482 13.1567242,77.6305207 12.3893869,78.425044 C11.6220497,79.2195674 11.6440884,80.4857056 12.4386118,81.2530428 L21.6246233,90.1247373 L37.2627697,75.2779094 C38.0638226,74.5173912 38.0966825,73.2514876 37.3361643,72.4504347 Z"></path>
+                  </svg>
+                </div>
+                <div class="cookie">
+                  <svg width="50px" height="162px" viewbox="0 0 50 162">
+                    <path class="cookie-outline" fill="#000000" fill-rule="nonzero" d="M25,3 C12.8497355,3 3,12.8497355 3,25 L3,137 C3,149.150264 12.8497355,159 25,159 C37.1502645,159 47,149.150264 47,137 L47,25 C47,12.8497355 37.1502645,3 25,3 Z M25,0 C38.8071187,0 50,11.1928813 50,25 L50,137 C50,150.807119 38.8071187,162 25,162 C11.1928813,162 0,150.807119 0,137 L0,25 C0,11.1928813 11.1928813,0 25,0 Z"></path>
+                    <path class="cookie-check hidden" fill="#CAE7DF" d="M25,7 C34.9411255,7 43,15.0588745 43,25 L43,138 C43,147.941125 34.9411255,156 25,156 C15.0588745,156 7,147.941125 7,138 L7,25 C7,15.0588745 15.0588745,7 25,7 Z M37.3361643,72.4504347 C36.5756461,71.6493817 35.3097425,71.6165218 34.5086896,72.37704 L21.6482912,84.586679 L15.2173857,78.3758192 C14.4228623,77.608482 13.1567242,77.6305207 12.3893869,78.425044 C11.6220497,79.2195674 11.6440884,80.4857056 12.4386118,81.2530428 L21.6246233,90.1247373 L37.2627697,75.2779094 C38.0638226,74.5173912 38.0966825,73.2514876 37.3361643,72.4504347 Z"></path>
+                  </svg>
+                </div>
+                <div class="cookie">
+                  <svg width="50px" height="162px" viewbox="0 0 50 162">
+                    <path class="cookie-outline" fill="#000000" fill-rule="nonzero" d="M25,3 C12.8497355,3 3,12.8497355 3,25 L3,137 C3,149.150264 12.8497355,159 25,159 C37.1502645,159 47,149.150264 47,137 L47,25 C47,12.8497355 37.1502645,3 25,3 Z M25,0 C38.8071187,0 50,11.1928813 50,25 L50,137 C50,150.807119 38.8071187,162 25,162 C11.1928813,162 0,150.807119 0,137 L0,25 C0,11.1928813 11.1928813,0 25,0 Z"></path>
+                    <path class="cookie-check hidden" fill="#CAE7DF" d="M25,7 C34.9411255,7 43,15.0588745 43,25 L43,138 C43,147.941125 34.9411255,156 25,156 C15.0588745,156 7,147.941125 7,138 L7,25 C7,15.0588745 15.0588745,7 25,7 Z M37.3361643,72.4504347 C36.5756461,71.6493817 35.3097425,71.6165218 34.5086896,72.37704 L21.6482912,84.586679 L15.2173857,78.3758192 C14.4228623,77.608482 13.1567242,77.6305207 12.3893869,78.425044 C11.6220497,79.2195674 11.6440884,80.4857056 12.4386118,81.2530428 L21.6246233,90.1247373 L37.2627697,75.2779094 C38.0638226,74.5173912 38.0966825,73.2514876 37.3361643,72.4504347 Z"></path>
+                  </svg>
+                </div>
+                <div class="cookie">
+                  <svg width="50px" height="162px" viewbox="0 0 50 162">
+                    <path class="cookie-outline" fill="#000000" fill-rule="nonzero" d="M25,3 C12.8497355,3 3,12.8497355 3,25 L3,137 C3,149.150264 12.8497355,159 25,159 C37.1502645,159 47,149.150264 47,137 L47,25 C47,12.8497355 37.1502645,3 25,3 Z M25,0 C38.8071187,0 50,11.1928813 50,25 L50,137 C50,150.807119 38.8071187,162 25,162 C11.1928813,162 0,150.807119 0,137 L0,25 C0,11.1928813 11.1928813,0 25,0 Z"></path>
+                    <path class="cookie-check hidden" fill="#CAE7DF" d="M25,7 C34.9411255,7 43,15.0588745 43,25 L43,138 C43,147.941125 34.9411255,156 25,156 C15.0588745,156 7,147.941125 7,138 L7,25 C7,15.0588745 15.0588745,7 25,7 Z M37.3361643,72.4504347 C36.5756461,71.6493817 35.3097425,71.6165218 34.5086896,72.37704 L21.6482912,84.586679 L15.2173857,78.3758192 C14.4228623,77.608482 13.1567242,77.6305207 12.3893869,78.425044 C11.6220497,79.2195674 11.6440884,80.4857056 12.4386118,81.2530428 L21.6246233,90.1247373 L37.2627697,75.2779094 C38.0638226,74.5173912 38.0966825,73.2514876 37.3361643,72.4504347 Z"></path>
+                  </svg>
+                </div>
+                <div class="cookie">
+                  <svg width="50px" height="162px" viewbox="0 0 50 162">
+                    <path class="cookie-outline" fill="#000000" fill-rule="nonzero" d="M25,3 C12.8497355,3 3,12.8497355 3,25 L3,137 C3,149.150264 12.8497355,159 25,159 C37.1502645,159 47,149.150264 47,137 L47,25 C47,12.8497355 37.1502645,3 25,3 Z M25,0 C38.8071187,0 50,11.1928813 50,25 L50,137 C50,150.807119 38.8071187,162 25,162 C11.1928813,162 0,150.807119 0,137 L0,25 C0,11.1928813 11.1928813,0 25,0 Z"></path>
+                    <path class="cookie-check hidden" fill="#CAE7DF" d="M25,7 C34.9411255,7 43,15.0588745 43,25 L43,138 C43,147.941125 34.9411255,156 25,156 C15.0588745,156 7,147.941125 7,138 L7,25 C7,15.0588745 15.0588745,7 25,7 Z M37.3361643,72.4504347 C36.5756461,71.6493817 35.3097425,71.6165218 34.5086896,72.37704 L21.6482912,84.586679 L15.2173857,78.3758192 C14.4228623,77.608482 13.1567242,77.6305207 12.3893869,78.425044 C11.6220497,79.2195674 11.6440884,80.4857056 12.4386118,81.2530428 L21.6246233,90.1247373 L37.2627697,75.2779094 C38.0638226,74.5173912 38.0966825,73.2514876 37.3361643,72.4504347 Z"></path>
+                  </svg>
+                </div>
+                <div class="cookie">
+                  <svg width="50px" height="162px" viewbox="0 0 50 162">
+                    <path class="cookie-outline" fill="#000000" fill-rule="nonzero" d="M25,3 C12.8497355,3 3,12.8497355 3,25 L3,137 C3,149.150264 12.8497355,159 25,159 C37.1502645,159 47,149.150264 47,137 L47,25 C47,12.8497355 37.1502645,3 25,3 Z M25,0 C38.8071187,0 50,11.1928813 50,25 L50,137 C50,150.807119 38.8071187,162 25,162 C11.1928813,162 0,150.807119 0,137 L0,25 C0,11.1928813 11.1928813,0 25,0 Z"></path>
+                    <path class="cookie-check hidden" fill="#CAE7DF" d="M25,7 C34.9411255,7 43,15.0588745 43,25 L43,138 C43,147.941125 34.9411255,156 25,156 C15.0588745,156 7,147.941125 7,138 L7,25 C7,15.0588745 15.0588745,7 25,7 Z M37.3361643,72.4504347 C36.5756461,71.6493817 35.3097425,71.6165218 34.5086896,72.37704 L21.6482912,84.586679 L15.2173857,78.3758192 C14.4228623,77.608482 13.1567242,77.6305207 12.3893869,78.425044 C11.6220497,79.2195674 11.6440884,80.4857056 12.4386118,81.2530428 L21.6246233,90.1247373 L37.2627697,75.2779094 C38.0638226,74.5173912 38.0966825,73.2514876 37.3361643,72.4504347 Z"></path>
+                  </svg>
+                </div>
+              </div> --><!-- end .half-dozen.second -->
+            </div><!-- end .cookie-box-amount -->
+
+            <!-- gift checkbox -->
+            <div class="gift unchecked">
+              <p>
+                <svg width="25px" height="25px" viewbox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect class="cookiebox-outline" stroke="#8FCABB" stroke-width="2" x="1" y="1" width="23" height="23"></rect>
+                    <path class="cookiebox-check" fill="#8FCABB" fill-rule="nonzero" d="M20.5296046,7.38593134 L20.5296046,7.38593134 C21.0416157,7.89944331 21.040399,8.73079404 20.5268871,9.24280516 L10.606341,19.1343563 L4.407374,13.2291591 C3.88232171,12.7289891 3.86215064,11.8978822 4.36232063,11.3728299 L4.36232063,11.3728299 C4.86249063,10.8477776 5.69359751,10.8276065 6.21864979,11.3277765 L10.5645359,15.4677107 L18.6727308,7.38321381 C19.1862428,6.87120269 20.0175935,6.87241937 20.5296046,7.38593134 Z"></path>
+                  </g>
+                </svg> 
+                THIS IS A GIFT
+              </p>
+            </div>
+          </div><!-- end .cookie-box -->
+          
+          <div>
+            <!-- flavors and amounts -->
+            <div id="flavorsAmounts">
+              
+              
+              <!-- example html -->
+              
+              <!-- <div class="flavor-and-amount">
+                <div class="select flavor">
+                <div class="value">
+                  Choose Cookie Flavor
+                </div>
+                <ul class="list hidden">
+                  <li class="option popular">
+                    <div class="cookie-image">
+                      <img src="https://cdn.glitch.com/a937f878-fbbb-4839-aa08-d25fd3a98c5f%2Fclassic-chocolate-chip.png?1515173855209">
+                    </div>
+                    <div class="cookie-option-name">
+                      Classic Chocolate Chip<span class="popular">POPULAR!</span>
+                    </div>
+                  </li>
+                  <li class="option popular">
+                    <div class="cookie-image">
+                      <img src="https://cdn.glitch.com/a937f878-fbbb-4839-aa08-d25fd3a98c5f%2Fcoconut-joy.png?1515173855422">
+                    </div>
+                    <div class="cookie-option-name">
+                      Coconut Joy<span class="popular">POPULAR!</span>
+                    </div>
+                  </li>
+                  <li class="option popular">
+                    <div class="cookie-image">
+                      <img src="https://cdn.glitch.com/a937f878-fbbb-4839-aa08-d25fd3a98c5f%2Fcowboy-cookie.png?1515173855214">
+                    </div>
+                    <div class="cookie-option-name">
+                      Cowboy Cookie<span class="popular">POPULAR!</span>
+                    </div>
+                  </li>
+                  <li class="option popular">
+                    <div class="cookie-image">
+                      <img src="https://cdn.glitch.com/a937f878-fbbb-4839-aa08-d25fd3a98c5f%2Fdouble-chocolate-chip.png?1515173855946">
+                    </div>
+                    <div class="cookie-option-name">
+                      Double Chocolate Chip<span class="popular">POPULAR!</span>
+                    </div>
+                  </li>
+                  <li class="option">
+                    <div class="cookie-image">
+                      <img src="https://cdn.glitch.com/a937f878-fbbb-4839-aa08-d25fd3a98c5f%2Fginger-snap.png?1515173855018">
+                    </div>
+                    <div class="cookie-option-name">
+                      Gingersnap
+                    </div>
+                  </li>
+                  <li class="option">
+                    <div class="cookie-image">
+                      <img src="https://cdn.glitch.com/a937f878-fbbb-4839-aa08-d25fd3a98c5f%2Fpeanut-butter.png?1516143454940">
+                    </div>
+                    <div class="cookie-option-name">
+                      Peanut Butter
+                    </div>
+                  </li>
+                  <li class="option">
+                    <div class="cookie-image">
+                      <img src="https://cdn.glitch.com/a937f878-fbbb-4839-aa08-d25fd3a98c5f%2Fsamoa.png?1515173855397">
+                    </div>
+                    <div class="cookie-option-name">
+                      Samoa
+                    </div>
+                  </li>
+                  <li class="option">
+                    <div class="cookie-image">
+                      <img src="https://cdn.glitch.com/a937f878-fbbb-4839-aa08-d25fd3a98c5f%2Fsnickerdoodle.png?1515173855096">
+                    </div>
+                    <div class="cookie-option-name">
+                      Snickerdoodle
+                    </div>
+                  </li>
+                  <li class="option">
+                    <div class="cookie-image">
+                      <img src="https://cdn.glitch.com/a937f878-fbbb-4839-aa08-d25fd3a98c5f%2Fsour-cream-lemon.png?1515173855163">
+                    </div>
+                    <div class="cookie-option-name">
+                      Sour Cream Lemon
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="select amount">
+                <div class="value">
+                  <div>
+                    3
+                  </div>
+                </div>
+                <ul class="list hidden">
+                  <li class="option">Remove</li>
+                  <li class="option">0</li>
+                  <li class="option">1</li>
+                  <li class="option">2</li>
+                  <li class="option">3</li>
+                  <li class="option">4</li>
+                  <li class="option">5</li>
+                  <li class="option">6</li>
+                  <li class="option">7</li>
+                  <li class="option">8</li>
+                  <li class="option">9</li>
+                  <li class="option">10</li>
+                  <li class="option">11</li>
+                  <li class="option">12</li>
+                </ul>
+              </div> -->
+            
+            
+              <!-- DISABLED EXAMPLE HTML -->
+              
+              <!-- cookie select 2 -->
+              <!-- <div class="flavor-and-amount">
+                <div class="disabled-select flavor">
+                <div class="value">
+                  Choose Cookie Flavor
+                </div>
+              </div>
+              <div class="disabled-select amount">
+                <div class="value">
+                  <div>
+                    0
+                  </div>
+                </div>
+              </div> --> 
+            </div><!-- end flavorsAmounts -->
+          </div>
+            
+          <!-- cookies remaining -->
+          <div class="cookies-remaining">
+            <p>
+              <span>0</span> Cookies Remaining <span>(remove cookies to select more flavors)</span>
+            </p>
+          </div>
+        </div><!-- end flavorsAmounts -->
+      </div><!-- end .cookie-select -->
+        
+        <!-- checkout -->
+        <div class="checkout">
+          <hr>
+          <div class="total-cart-wrapper">
+            <!-- total cart -->
+            <div class="total-cart">
+              <!-- total -->
+              <div class="total bold">
+                <div class="total-text">TOTAL:</div>
+                <!-- total determined by whatever product option the user chose -->
+                <div class="total-price">$22.00</div>
+              </div>
+
+              <!-- add to cart -->
+              <div class="add-to-cart">
+                <button>ADD TO CART</button>
+              </div>
+            </div><!-- end .total-cart -->
+          </div>
+        </div><!-- end .checkout -->
+      </section><!-- end .cookie-select-section -->
+    </main>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+  </body>
+</html>
